@@ -261,8 +261,8 @@ describe("groupBy", () => {
 
 	it("should group objects by key value when given valid array and existing key", () => {
 		const result = groupBy(team, "role");
-		expect(result["dev"]).toHaveLength(2);
-		expect(result["design"]).toHaveLength(1);
+		expect(result.dev).toHaveLength(2);
+		expect(result.design).toHaveLength(1);
 	});
 
 	it("should return empty object when given empty array", () => {
@@ -271,7 +271,7 @@ describe("groupBy", () => {
 
 	it("should group all items under 'undefined' key when key does not exist", () => {
 		const result = groupBy(team, "nonexistent");
-		expect(result["undefined"]).toHaveLength(3);
+		expect(result.undefined).toHaveLength(3);
 	});
 
 	it("should return empty object when given null", () => {
@@ -285,7 +285,7 @@ describe("groupBy", () => {
 		];
 		const result = groupBy(devs, "role");
 		expect(Object.keys(result)).toHaveLength(1);
-		expect(result["dev"]).toHaveLength(2);
+		expect(result.dev).toHaveLength(2);
 	});
 });
 
