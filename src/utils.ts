@@ -47,7 +47,7 @@ export const parsePrice = (input: string | number | null): number | null => {
 	if (input.toLowerCase() === "gratuit") return 0;
 	const cleaned = input.replace(/[€$\s]/g, "").replace(",", ".");
 	const value = parseFloat(cleaned);
-	if (isNaN(value)) return null;
+	if (Number.isNaN(value)) return null;
 	if (value < 0) return null;
 	return value;
 };
