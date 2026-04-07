@@ -2,13 +2,18 @@
   "name": "unit-testing",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "bun run --watch src/index.ts"
+    "test": "bun test",
+    "test:watch": "bun test --watch ",
+    "test:coverage": "bun test --coverage",
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "lint": "biome check --write"
   },
   "dependencies": {
     "elysia": "latest"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.4.10",
     "bun-types": "latest"
   },
   "module": "src/index.js"
