@@ -3,7 +3,7 @@ export const isValidEmail = (email: string | null): boolean => {
 	const atIndex = email.indexOf("@");
 	if (atIndex <= 0) return false;
 	const domain = email.slice(atIndex + 1);
-	if (!domain || !domain.includes(".")) return false;
+	if (!domain?.includes(".")) return false;
 	const afterDot = domain.slice(domain.lastIndexOf(".") + 1);
 	return afterDot.length > 0;
 };
