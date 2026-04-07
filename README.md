@@ -1,8 +1,6 @@
 # unit-testing
 
 ![CI](https://github.com/Sugow0/unit-testing/actions/workflows/ci.yml/badge.svg?branch=main)
-[![Coverage](https://codecov.io/gh/Sugow0/unit-testing/branch/main/graph/badge.svg)](https://codecov.io/gh/Sugow0/unit-testing)
-[![Maintainability](https://api.codeclimate.com/v1/badges/VOTRE_ID/maintainability)](https://codeclimate.com/github/Sugow0/unit-testing)
 
 Projet de TP CI/CD — Ynov M1. Implémentation d'une suite de tests unitaires et d'intégration sur un moteur de tarification de livraison, exposé via une API REST.
 
